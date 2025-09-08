@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexiones Estudiantes</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="logo">TiendaDuoc</span>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Productos</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <div class="cart">
+                <a href="#">Cart (0)</a>
+            </div>
+        </div>
+    </header>
+    <form id="formEstudiante">
+        <h2>Registro de usuario</h2>
+
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" required>
+
+        <label for="confirmarCorreo">Confirmar Correo</label>
+        <input type="email" id="confirmarCorreo" required>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" required>
+
+        <label for="confirmarContrasena">Confirmar Contraseña</label>
+        <input type="password" id="confirmarContrasena" required>
+
+        <label for="telefono">Teléfono (opcional)</label>
+        <input type="tel" id="telefono">
+
+        <label for="region">Selecciona la región</label>
+        <select id="region" required>
+            <option value="santiago">Región Metropolitana de Santiago</option>
+            <option value="araucania">Región de La Araucanía</option>
+            <option value="biobio">Región de Biobío</option>
+        </select>
+
+        <label for="comuna">Selecciona la comuna</label>
+        <select id="comuna" required>
+            <option value="santiago">Santiago</option>
+            <option value="pucon">Pucón</option>
+            <option value="concepcion">Concepción</option>
+        </select>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+
+
+</body>
+<script src="../js/registro.js"></script>
+
+</html>

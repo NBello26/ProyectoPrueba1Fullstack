@@ -1,0 +1,63 @@
+/* Estilo del formulario */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas y campos de texto */
+form label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Estilo del botón */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para los campos al hacer focus */
+form input:focus, form select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Espaciado entre los elementos */
+form br {
+  margin-bottom: 10px;
+}

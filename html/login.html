@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="logo">TiendaDuoc</span>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Productos</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <div class="cart">
+                <a href="#">Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor para el logo y el nombre de la tienda -->
+    <div class="logo-container">
+        <!-- Logo de la tienda (puedes reemplazar esta imagen con tu logo real) -->
+        <img src="https://via.placeholder.com/150" alt="Logo" class="logo-image">
+        <!-- Nombre de la tienda -->
+        <h1 class="store-name">TiendaDuoc</h1>
+    </div>
+
+    <!-- Formulario de login -->
+    <form id="formLogin">
+        <h2>Inicio de sesión</h2>
+
+        <label for="correoLogin">Correo</label>
+        <input type="email" id="correoLogin" required>
+
+        <label for="contrasenaLogin">Contraseña</label>
+        <input type="password" id="contrasenaLogin" required>
+
+        <button type="submit">Iniciar sesión</button>
+    </form>
+
+</body>
+<script src="../js/login.js"></script>
+
+</html>

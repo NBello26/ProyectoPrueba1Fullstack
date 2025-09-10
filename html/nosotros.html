@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <header>
+    <div class="container header-content">
+      <div class="site-name">TIENDA ONLINE</div>
+      <nav>
+        <ul>
+          <li><a href="paginaPrincipal.html">Home</a></li>
+          <li><a href="tienda.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="carrito.html" class="cart">Cart (<span id="contador-carrito">0</span>)</a>
+        <div class="user-auth">
+          <a href="login.html">Login</a> | 
+          <a href="registro.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <main>
+        <section class="empresa">
+            <h2>La Empresa</h2>
+            <p>
+                Somos una empresa dedicada a ofrecer soluciones tecnológicas modernas y 
+                accesibles. Nuestro objetivo es digitalizar y mejorar los procesos de 
+                las empresas mediante el desarrollo de aplicaciones web y móviles.
+            </p>
+        </section>
+
+        <section class="desarrolladores">
+            <h2>Los Desarrolladores</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Ana Pérez</h3>
+                    <p>Frontend Developer</p>
+                    <button onclick="mostrarInfo('ana')">Ver más</button>
+                    <p id="ana" class="extra">Apasionada por el diseño y la experiencia de usuario.</p>
+                </div>
+                <div class="card">
+                    <h3>Carlos Gómez</h3>
+                    <p>Backend Developer</p>
+                    <button onclick="mostrarInfo('carlos')">Ver más</button>
+                    <p id="carlos" class="extra">Especialista en APIs y bases de datos seguras.</p>
+                </div>
+                <div class="card">
+                    <h3>Lucía Torres</h3>
+                    <p>Fullstack Developer</p>
+                    <button onclick="mostrarInfo('lucia')">Ver más</button>
+                    <p id="lucia" class="extra">Combina lo mejor del frontend y backend.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Nuestra Empresa - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../js/nosotros.js"></script>
+    <script src="../js/carrito-comun.js"></script>
+</body>
+</html>

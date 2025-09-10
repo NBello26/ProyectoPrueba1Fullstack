@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.titulo {
+  text-align: center;
+  margin: 30px 0 10px;
+  font-size: 28px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* ✅ 4 productos por fila fijos */
+#listaProductos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+  font-size: 14px; /* ✅ más compacto */
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card .image-placeholder {
+  width: 100%;
+  height: 120px;
+  background: #d9d9d9; /* gris plomo */
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.card h2 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 13px;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 15px;
+  color: #27ae60;
+}
+
+.card button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 13px;
+}
+
+.card button:hover {
+  background: #2980b9;
+}

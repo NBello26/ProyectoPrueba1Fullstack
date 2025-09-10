@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de productos</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+</head>
+<body>
+    <header>
+        <h1>Listado de productos</h1>
+    </header>
+
+    <main>
+        <a href="registroProducto.html" class="boton-nuevo">+ Nuevo producto</a>
+        <a href="pagadmin.html" class="btn-back">Volver al Panel</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody id="tablaProductos">
+                <!-- Productos serán insertados aquí -->
+            </tbody>
+        </table>
+    </main>
+    <script src="../js/listproductos.js"></script>
+</body>
+</html>

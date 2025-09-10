@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="site-name">TIENDA ONLINE</div>
+            <nav>
+                <ul>
+                    <li><a href="paginaPrincipal.html">Home</a></li>
+                    <li><a href="tienda.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                 <a href="carrito.html" class="cart">Cart (<span id="contador-carrito">0</span>)</a>
+                <div class="user-auth">
+                    <a href="login.html">Login</a> | 
+                    <a href="registro.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="carrito-container">
+        <h1>Tu Carrito de Compras</h1>
+        
+        <div id="carrito-items">
+            <!-- Los items del carrito se cargarán aquí -->
+        </div>
+        
+        <div id="carrito-vacio" class="carrito-mensaje-vacio carrito-hidden">
+            <h2>Tu carrito está vacío</h2>
+            <p>No hay productos en tu carrito de compras.</p>
+            <a href="paginaPrincipal.html" class="carrito-btn carrito-btn-primary">Ir a la página principal</a>
+        </div>
+        
+        <div id="carrito-total" class="carrito-total carrito-hidden">
+            <h2>Resumen de Compra</h2>
+            <p>Total: $<span id="total-precio">0.00</span></p>
+            <button class="carrito-btn carrito-btn-success">Finalizar Compra</button>
+            <button id="vaciar-carrito-btn" class="carrito-btn carrito-vaciar">Vaciar Carrito</button>
+        </div>
+    </div>
+    <script src="../js/carrito-comun.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+</html>

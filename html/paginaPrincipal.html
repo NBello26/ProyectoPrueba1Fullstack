@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="../css/pagPrincipal.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="site-name">TIENDA ONLINE</div>
+            <nav>
+                <ul>
+                    <li><a href="paginaPrincipal.html">Home</a></li>
+                    <li><a href="tienda.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                 <a href="carrito.html" class="cart">Cart (<span id="contador-carrito">0</span>)</a>
+                <div class="user-auth">
+                    <a href="login.html">Login</a> | 
+                    <a href="registro.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>TIENDA ONLINE</h1>
+            <p>Nuestra tienda ofrece los mejores productos con la más alta calidad. Descubre nuestras increíbles ofertas y lleva tu experiencia de compra al siguiente nivel.</p>
+            <a href="tienda.html" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <section class="featured-products" id="products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid" id="products-container">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>TIENDA ONLINE - Tu destino para compras en línea</p>
+                <p>Contacto: info@tiendaonline.com | Tel: +1 234 567 890</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Tienda Online. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+<script src="../js/PagPrincipal.js"></script>
+<script src="../js/carrito-comun.js"></script>
+
+</body>
+</html>

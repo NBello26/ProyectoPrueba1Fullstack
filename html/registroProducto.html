@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Productos (Admin)</title>
+  <link rel="stylesheet" href="../css/regAdmin.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Registro de Producto (Admin)</h2>
+
+    <form id="formProducto">
+
+      <!-- Nombre -->
+      <div class="single">
+        <label for="nombre">Nombre del Producto</label>
+        <input type="text" id="nombre" required>
+      </div>
+
+      <!-- Precio -->
+      <div class="single">
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" required min="0" step="0.01">
+      </div>
+
+      <!-- Descripción -->
+      <div class="single">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" required rows="3"></textarea>
+      </div>
+
+      <!-- Cantidad -->
+      <div class="single">
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" required min="0">
+      </div>
+
+      <button type="submit" class="btn-submit">Registrar Producto</button>
+      <button type="button" class="btn-back" onclick="window.location.href='listproductos.html'">Volver</button>
+    </form>
+  </div>
+
+  <script src="../js/registroProducto.js"></script>
+</body>
+</html>

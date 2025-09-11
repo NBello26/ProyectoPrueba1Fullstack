@@ -13,11 +13,11 @@ document.getElementById("formLogin").addEventListener("submit", function(e) {
     if (usuarioEncontrado) {
         // Redirigir según el tipo de usuario
         if (usuarioEncontrado.tipusuario === "usuario") {
-            window.location.href = "pagina_principal.html"; // Redirige a la página principal
+            window.location.href = "paginaPrincipal.html"; // Redirige a la página principal
         } else if (usuarioEncontrado.tipusuario === "vendedor") {
             window.location.href = "pagvendedor.html"; // Redirige a la página de vendedor
         } else if (usuarioEncontrado.tipusuario === "admin") {
-            window.location.href = "pagadmin.html"; // Redirige a la página de admin
+            window.location.href = "../html/adminpage/pagadmin.html"; // Redirige a la página de admin
         }
     } else {
         alert("Correo o contraseña incorrectos");

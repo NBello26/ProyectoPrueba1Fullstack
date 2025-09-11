@@ -9,7 +9,7 @@ document.getElementById("formEstudiante").addEventListener("submit", function(e)
     let telefono = document.getElementById("telefono").value;
     let region = document.getElementById("region").value;
     let comuna = document.getElementById("comuna").value;
-    let tipusuario = "cliente";
+    let tipusuario = "usuario";
 
     // Validación básica
 

@@ -15,7 +15,7 @@ function cargarProductos() {
     productosContainer.innerHTML = '';
 
     // Obtener solo los primeros 5 productos
-    const primerosProductos = productos.slice(0, 5);
+    const primerosProductos = productos.slice(0, 4);
 
     primerosProductos.forEach(producto => {
         const productCard = document.createElement('div');

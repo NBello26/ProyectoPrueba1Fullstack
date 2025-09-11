@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/carrito.css">
+  <meta charset="UTF-8">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/carrito.css">
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <div class="site-name">TIENDA ONLINE</div>
-            <nav>
-                <ul>
-                    <li><a href="paginaPrincipal.html">Home</a></li>
-                    <li><a href="tienda.html">Productos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
-                 <a href="carrito.html" class="cart">Cart (<span id="contador-carrito">0</span>)</a>
-                <div class="user-auth">
-                    <a href="login.html">Login</a> | 
-                    <a href="registro.html">Register</a>
-                </div>
+  <header>
+    <div class="container header-content">
+      <div class="site-name">TIENDA DuocUC</div>
+      <nav>
+        <ul>
+          <li><a href="paginaPrincipal.html">Home</a></li>
+          <li><a href="tienda.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="carrito.html" class="cart">Cart (<span id="contador-carrito">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="carrito-container">
+    <h1>Tu Carrito de Compras</h1>
+
+    <div id="carrito-vacio" class="carrito-mensaje-vacio">
+      <h2>Tu carrito está vacío</h2>
+      <p>No hay productos en tu carrito de compras.</p>
+    </div>
+
+    <div id="carrito-contenido" class="carrito-hidden">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="carrito-items">
+          <!-- Items aquí -->
+        </tbody>
+      </table>
+
+      <div id="carrito-total" class="carrito-total"></div>
+      <button class="carrito-btn carrito-btn-success" id="finalizar-compra">Finalizar Compra</button>
+      <button class="carrito-btn carrito-vaciar" id="vaciar-carrito">Vaciar Carrito</button>
+    </div>
+  </div>
+  </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>TIENDA DuocUC - Tu destino para compras en línea si eres estudiante de DuocUC Puerto Montt</p>
+                <p>Contacto: info@tiendaDuocUC.com | Tel: +569 2345 6789</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tienda DuocUC. Todos los derechos reservados.</p>
             </div>
         </div>
-    </header>
-    
-    <div class="carrito-container">
-        <h1>Tu Carrito de Compras</h1>
-        
-        <div id="carrito-items">
-            <!-- Los items del carrito se cargarán aquí -->
-        </div>
-        
-        <div id="carrito-vacio" class="carrito-mensaje-vacio carrito-hidden">
-            <h2>Tu carrito está vacío</h2>
-            <p>No hay productos en tu carrito de compras.</p>
-            <a href="paginaPrincipal.html" class="carrito-btn carrito-btn-primary">Ir a la página principal</a>
-        </div>
-        
-        <div id="carrito-total" class="carrito-total carrito-hidden">
-            <h2>Resumen de Compra</h2>
-            <p>Total: $<span id="total-precio">0.00</span></p>
-            <button class="carrito-btn carrito-btn-success">Finalizar Compra</button>
-            <button id="vaciar-carrito-btn" class="carrito-btn carrito-vaciar">Vaciar Carrito</button>
-        </div>
-    </div>
+    </footer>
     <script src="../js/carrito-comun.js"></script>
     <script src="../js/carrito.js"></script>
 </body>

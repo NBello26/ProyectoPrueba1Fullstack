@@ -123,13 +123,6 @@
     margin-bottom: 20px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #7f8c8d;
-    font-size: 0.9rem;
-}
-
 @media (max-width: 768px) {
     .product-details {
         flex-direction: column;

@@ -2,18 +2,18 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflexiones Estudiantes</title>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/formulario.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflexiones Estudiantes</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/formulario.css">
 </head>
 
 <body>
 
-    <header>
+  <header>
     <div class="container header-content">
-      <div class="site-name">TIENDA ONLINE</div>
+      <div class="site-name">TIENDA DuocUC</div>
       <nav>
         <ul>
           <li><a href="paginaPrincipal.html">Home</a></li>
@@ -26,51 +26,61 @@
       <div class="header-right">
         <a href="carrito.html" class="cart">Cart (<span id="contador-carrito">0</span>)</a>
         <div class="user-auth">
-          <a href="login.html">Login</a> | 
+          <a href="login.html">Login</a> |
           <a href="registro.html">Register</a>
         </div>
       </div>
     </div>
   </header>
 
-    <form id="formEstudiante">
-        <h2>Registro de usuario</h2>
+  <form id="formEstudiante">
+    <h2>Registro de usuario</h2>
 
-        <label for="nombre">Nombre Completo</label>
-        <input type="text" id="nombre" required>
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" id="nombre" required placeholder="Ingresa tu nombre">
 
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" required>
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" required placeholder="ejemplo@duoc.cl">
 
-        <label for="confirmarCorreo">Confirmar Correo</label>
-        <input type="email" id="confirmarCorreo" required>
+    <label for="confirmarCorreo">Confirmar Correo</label>
+    <input type="email" id="confirmarCorreo" required placeholder="ejemplo@duoc.cl">
 
-        <label for="contrasena">Contraseña</label>
-        <input type="password" id="contrasena" required>
+    <label for="contrasena">Contraseña</label>
+    <input type="password" id="contrasena" required placeholder="Ingresa tu contraseña">
 
-        <label for="confirmarContrasena">Confirmar Contraseña</label>
-        <input type="password" id="confirmarContrasena" required>
+    <label for="confirmarContrasena">Confirmar Contraseña</label>
+    <input type="password" id="confirmarContrasena" required placeholder="Confirma tu contraseña">
 
-        <label for="telefono">Teléfono (opcional)</label>
-        <input type="tel" id="telefono">
+    <label for="telefono">Teléfono (opcional)</label>
+    <input type="tel" id="telefono" placeholder="+569 1234 5678">
 
-        <label for="region">Selecciona la región</label>
-        <select id="region" required>
-            <option value="santiago">Región Metropolitana de Santiago</option>
-            <option value="araucania">Región de La Araucanía</option>
-            <option value="biobio">Región de Biobío</option>
-        </select>
+    <label for="region">Selecciona la región</label>
+    <select id="region" required onchange="cargarComunas()">
+      <option value="">Seleccione región</option>
+      <option value="Lagos">Región de Los Lagos</option>
+      <option value="Metropolitana">Región Metropolitana</option>
+      <option value="Araucanía">Región de La Araucanía</option>
+      <option value="Biobío">Región del Biobío</option>
+    </select>
 
-        <label for="comuna">Selecciona la comuna</label>
-        <select id="comuna" required>
-            <option value="santiago">Santiago</option>
-            <option value="pucon">Pucón</option>
-            <option value="concepcion">Concepción</option>
-        </select>
+    <label for="comuna">Selecciona la comuna</label>
+    <select id="comuna" required>
+      <option value="">Seleccione comuna</option>
+    </select>
 
-        <button type="submit">Registrar</button>
-    </form>
-
+    <button type="submit">Registrar</button>
+  </form>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>TIENDA DuocUC - Tu destino para compras en línea si eres estudiante de DuocUC Puerto Montt</p>
+        <p>Contacto: info@tiendaDuocUC.com | Tel: +569 2345 6789</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Tienda DuocUC. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
 
 </body>

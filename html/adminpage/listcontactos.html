@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="../../css/adminpage/usuario.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Contactos</h1>
+    </header>
+    
+    <main>
+        <div class="acciones">
+            <a href="../adminpage/pagadmin.html" class="btn-back">Volver al Panel</a>
+        </div>
+        
+        <table id="tabla-contactos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Comentario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los contactos se cargarán aquí mediante JavaScript -->
+            </tbody>
+        </table>
+        
+        <p id="mensaje-vacio" style="display: none; text-align: center; margin-top: 2em;">
+            No hay contactos guardados.
+        </p>
+    </main>
+
+    <script src="../../js/adminpage/listcontactos.js"></script>
+</body>
+</html>

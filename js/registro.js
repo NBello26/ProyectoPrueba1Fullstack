@@ -61,3 +61,30 @@ document.getElementById("formEstudiante").addEventListener("submit", function(e)
 function guardarUsuarios(usuarios) {
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 }
+
+
+// Datos de comunas por región
+var comunasPorRegion = {
+    "Lagos": ["Puerto Montt", "Osorno", "Castro", "Ancud", "Puerto Varas"],
+    "Metropolitana": ["Santiago", "Providencia", "Las Condes", "Maipú", "Ñuñoa"],
+    "Araucanía": ["Temuco", "Padre Las Casas", "Villarrica", "Pucón"],
+    "Biobío": ["Concepción", "Talcahuano", "Chiguayante", "Los Ángeles"]
+};
+
+// Función para cargar comunas según la región seleccionada
+function cargarComunas() {
+    var region = document.getElementById("region").value;
+    var comunaSelect = document.getElementById("comuna");
+
+    // Limpiar opciones previas
+    comunaSelect.innerHTML = '<option value="">Seleccione comuna</option>';
+
+    if (region && comunasPorRegion[region]) {
+        comunasPorRegion[region].forEach(function(c) {
+            var option = document.createElement("option");
+            option.value = c;
+            option.textContent = c;
+            comunaSelect.appendChild(option);
+        });
+    }
+}
